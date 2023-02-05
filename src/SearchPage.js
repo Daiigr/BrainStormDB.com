@@ -1,36 +1,52 @@
-import './BrainStormTitle.css';
-import './OptionsPill.css';
+import './SearchPage.css';
 import SearchBar from './SearchBar';
 import React from 'react';
-import LatexRenderer from './LatexRenderer';
-import Tags from './Tags';
+
+import SettingsIcon from './SettingsIcon';
+
+
+import 'katex/dist/katex.min.css'
+import Latex from 'react-latex-next'
+import TopQuestions from './TopQuestions';
+
 
 
 function SearchPage() {
- 
-  
+
     return (
       <div>
         <div className="brainstormdb-title">
           <header className="brainstormdb-title-header">
             <p>BrainStormDB</p>
           </header>
+          <header className="brainstormdb-subtitle-header">
+            <p>the free Databank of Questions </p>
+            </header>
+
+
+
         </div>
-        <div className="options-pill">
-          <header className="options-pill-header">
-            <p>Options</p>
-          </header>
+        <div
+        className="separator-line">
         </div>
+
+        <div className="settings-icon">
+          <SettingsIcon />
+        </div>
+
         <div className="search-bar">
                 <SearchBar/>         
         </div>
 
         <div className="example-searches">
-            <header className="example-searches-header">
-                <LatexRenderer/>
-                <Tags/>
-            </header>
-            </div>
+        <Latex>
+        {String.raw`$\sin^2\theta + \cos^2\theta = 1$`}
+       
+      </Latex>
+      </div>
+      <div>
+        <TopQuestions/>
+      </div>
       </div>
     );
   }
