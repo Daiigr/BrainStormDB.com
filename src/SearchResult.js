@@ -1,5 +1,6 @@
 import React from 'react';
 import Latex from 'react-latex-next';
+import 'katex/dist/katex.min.css'
 import './SearchResult.css';
 
 function SearchResult({ equation, tags, rating, verified }) {

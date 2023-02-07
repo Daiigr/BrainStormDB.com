@@ -17,7 +17,13 @@ function SearchPage() {
       tags: ['complex numbers', 'identity'],
       rating: 4.8,
       verified: false
-    }
+    },
+    {
+      equation: String.raw`$\frac{1}{n}\sum_{k=1}^n a_k = \bar{a}$`,
+      tags: ['statistics', 'mean'],
+      rating: 4.2,
+      verified: true
+    },
   ];
 
   return (
@@ -48,11 +54,7 @@ function SearchPage() {
           />
         ))}
       </div>
-      <div className="top-questions">
-        <header className="top-questions-header">
-          <p>Top Questions</p>
-        </header>
-      </div>
+      
     </div>
   );
 }
