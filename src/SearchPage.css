@@ -114,13 +114,17 @@ body {
 
       .example-searches{
         position: absolute;
-        top: 40%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
         display: inline-flex;
-        color: Black;
-        width: 1000px; /* change this value to set the desired width */
+        width: 500px; /* change this value to set the desired width */
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        opacity: 0;
+        animation: fade-in 1s ease-in-out forwards;
       }
     
       .top-questions {

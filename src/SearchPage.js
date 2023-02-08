@@ -43,7 +43,7 @@ function SearchPage() {
       <div className="search-bar">
         <SearchBar />
       </div>
-      <div className="example-searches">
+      <div className="example-searches"  style={{display: 'flex', flexDirection: 'column'}}>
         {searchResultsList.map((searchResult, index) => (
           <SearchResult
             key={index}
