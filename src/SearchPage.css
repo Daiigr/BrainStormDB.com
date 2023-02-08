@@ -2,7 +2,7 @@ body {
   /*
   gradent background bewtween dark green to dark blue
   */ 
-  background-color: #c1cbca;
+  background-color: #b9b1a2fd;
 }
 
 
@@ -120,11 +120,12 @@ body {
         text-align: center;
         display: inline-flex;
         width: 500px; /* change this value to set the desired width */
-        margin: 0 auto;
+        margin: 10px ;
         margin-top: 100px;
         margin-bottom: 100px;
         opacity: 0;
         animation: fade-in 1s ease-in-out forwards;
+        
       }
     
       .top-questions {
